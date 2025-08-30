@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/voice_intent_classifier_banner.png" alt="Voice Intent Classifier" width="100%">
+</p>
+
 # 🎙️ Voice Search Intent Classifier (with GPU Profiling Lab)
 
 This project trains an artificial neural network to classify voice search queries by intent—such as `information`, `command`, `shopping`, or `entertainment`. Built for clarity, modularity, and performance, the lab includes full GPU profiling using NVIDIA Nsight Systems and NVTX markers.
@@ -5,6 +9,7 @@ This project trains an artificial neural network to classify voice search querie
 ---
 
 ![CI](https://github.com/dartayous/ml-training-lab/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/dartayous/voice-intent-classifier/actions/workflows/ci.yml/badge.svg)
 
 ---
 
@@ -14,6 +19,7 @@ ml-training-lab/
 ├── train_model.py    # Training script with NVTX profiling 
 ├── predict_intent.py # Inference script for new voice queries 
 ├── utils.py          # Shared preprocessing and encoding functions 
+├── assets/           # .png files for viewing 
 ├── traces/           # Nsight Systems .nsys-rep files 
 └── README.md         # Project overview and instructions
 
@@ -97,6 +103,21 @@ python predict_intent.py
 ### Sample output:
 Query: 'Play jazz music on Spotify' → Predicted Intent: 'entertainment'
 Query: 'Turn off the living room lights' → Predicted Intent: 'command'
+
+---
+
+## 📓 Simulation Notebook
+
+Explore the full training and testing workflow in the interactive notebook:
+
+👉 [`ml_training_lab_SIM.ipynb`](ml_training_lab_SIM.ipynb)
+
+This notebook walks through:
+- Data loading and preprocessing
+- Model architecture and training
+- NVTX-wrapped profiling setup
+- Inference on new voice queries
+- Commentary and visual outputs
 
 ---
 
