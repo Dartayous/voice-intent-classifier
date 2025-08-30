@@ -1,0 +1,8 @@
+pandas==2.0.3
+numpy
+scikit-learn
+tensorflow>=2.12.0
+nvtx
+matplotlib          # For plotting training curves or confusion matrices
+pytest              # For unit testing utils or model outputs
+jupyterlab          # If you want to run notebooks alongside scripts
